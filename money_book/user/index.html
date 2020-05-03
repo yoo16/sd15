@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Money Book</title>
+  <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand text-danger" href="#">Money Book</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../mypage/">マイページ</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../income/">収入</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../expense/">支出</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../saving/">貯蓄</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../master/">マスタ設定</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" href="../user/">ユーザ情報</a>
+        </li>
+      </ul>
+
+      <div class="user_info" class="text-right">
+        <div>
+          <small class="">吉川　洋平さん</small>
+          <small class="">2020/05/01 13:44</small>
+          <a class="btn btn-sm btn-danger" href="../">ログアウト</a>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 class="h1">ユーザ情報</h1>
+    <div id="login">
+      <form action="update" method="post">
+        <div class="form-group">
+          <label for="email">Eメールアドレス</label>
+          <input type="email" class="form-control col-6" id="email" placeholder="Eメールアドレス" value="yoshikawa@xxx.com">
+        </div>
+
+        <div class="form-group">
+          <label for="user_name">氏名</label>
+          <div class="form-inline">
+            <input type="text" class="form-control col-2" id="last_name" placeholder="姓" value="吉川">
+            
+            <input type="text" class="form-control col-2" id="first_name" placeholder="名" value="洋平">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="password">パスワード</label>
+          <a href="change_password" class="btn btn-outline-danger">パスワード変更</a>
+        </div>
+        <button type="submit" class="btn btn-primary">更新</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

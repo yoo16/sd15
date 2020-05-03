@@ -1,13 +1,85 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Money Book</title>
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <div class="container">
 
-    </div> 
+<body>
+  <div class="container">
+    <h1 class="h1 text-danger">Money Book</h1>
+
+    <div class="row">
+
+      <div id="login_form" class="col-6">
+        <form action="mypage/" method="post">
+          <div class="card">
+
+            <div class="card-body">
+              <h2 class="h2">会員ログイン</h2>
+              <div class="form-group">
+                <label for="email">ユーザID（Eメールアドレス）</label>
+                <input type="email" class="form-control" id="email" placeholder="Eメールアドレス">
+                <small class="text-muted"></small>
+              </div>
+              <div class="form-group">
+                <label for="password">パスワード</label>
+                <input type="password" class="form-control" id="password" placeholder="パスワード">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="remember">
+                <label class="form-check-label" for="remember">記憶する</label>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <p>
+                <a href="" tareget="_blank">個人情報保護方針</a>に同意してログイン
+              </p>
+              <p>
+                <button type="submit" class="btn btn-danger btn-block">ログイン</button>
+              </p>
+              <p>
+                <a href="">ユーザID・パスワードを忘れた場合</a>
+              </p>
+            </div>
+
+          </div>
+        </form>
+      </div>
+
+      <div class="col-6">
+
+        <div class="card">
+          <div class="card-body">
+            <h2 class="h2">Money Bookとは</h2>
+            <div>
+              Money Book とは、お小遣い帳をクラウドで管理するシステムです。
+            </div>
+          </div>
+        </div>
+
+        <div class="card mt-4">
+          <div class="card-body">
+            <h2 class="h2">新規会員登録</h2>
+            <div>
+              このサービスを利用するためには新規会員登録が必要です。
+            </div>
+            <p>
+              <button type="submit" class="btn btn-danger btn-block">新規登録する</button>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
 </body>
+
 </html>
