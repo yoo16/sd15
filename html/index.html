@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/prism.css">
+  <link rel="stylesheet" href="css/default.css">
+
+  <title>HTML</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>HTMLタグ</h1>
+
+    <div id="div">
+      <h2 class="h2">div</h2>
+      <div>
+        <ul>
+          <li>内容のひとかたまり</li>
+          <li>HTMLの項目が増えた時の整理</li>
+          <li>プログラムの扱いやすさ</li>
+        </ul>
+      </div>
+      <script type="text/plain" class="language-markup">
+    <div>
+      <h2>商品一覧</h2>
+      <dl>
+        <dt>お茶（24本）</dt>
+        <dd>¥1,200</dd>
+        <dd><input type="text" name="amount" value="">個</dd>
+        <dt>オレンジジュース（24本）</dt>
+        <dd>¥1,800</dd>
+        <dd><input type="text" name="amount" value="">個</dd>
+      </dl>
+    </div>
+    </script>
+    </div>
+
+    <h2 class="h2">main, sction, nav...（div拡張）</h2>
+    <div>
+      <ul>
+        <li>div の拡張</li>
+        <li>HTML5で登場した概念</li>
+        <li>厳密な規定はない（プロジェクトの思想に合わせる）</li>
+      </ul>
+    </div>
+    <nav>nav contents</nav>
+    <main>main contents</main>
+    <section>section contents</section>
+
+    <script type="text/plain" class="language-markup">
+    <nav>nav contents</nav>
+    <main>main contents</main>
+    <section>section contents</section>
+    </script>
+
+    <h2 class="h2">コントロールタグ</h2>
+    <div id="input">
+      <h2 class="h2">input</h2>
+      <div>
+        <ul>
+          <li>入力の基本タグ</li>
+          <li>name: Webに送信する項目名(key)</li>
+          <li>value: nameに対する値(value)</li>
+          <li>type: inputの種別 HTML5で種類が増え、ブラウザが対応していれば認識</li>
+        </ul>
+      </div>
+
+      <script type="text/plain" class="language-markup">
+      //text
+      <input type="text" name="email" value="">
+
+      //password
+      <input type="password" name="password">
+
+      //radio
+      <input type="radio" name="is_active" value="1">有
+      <input type="radio" name="is_active" value="0">無
+
+      //checkbox
+      <input type="checkbox" name="questions[]" value="1">質問1
+      <input type="checkbox" name="questions[]" value="2">質問2
+      <input type="checkbox" name="questions[]" value="3">質問3
+
+      //hidden
+      <input type="hidden" name="user_id" value="100">
+
+      //submit
+      <input type="submit" value="送信">
+    </script>
+
+      <div>
+        <div>
+          <input type="text" name="email" value="">
+        </div>
+
+        <div>
+          <input type="password" name="password" value="">
+        </div>
+
+        <div>
+          <input type="radio" name="is_active" value="1">有
+          <input type="radio" name="is_active" value="0">無
+        </div>
+
+        <div>
+          <input type="checkbox" name="question[]" value="1">質問1
+          <input type="checkbox" name="question[]" value="2">質問2
+          <input type="checkbox" name="question[]" value="3">質問3
+        </div>
+
+        <div>
+          <input type="hidden" name="user_id" value="100">
+          <input type="submit" value="送信" class="btn btn-sm btn-primary">
+        </div>
+      </div>
+
+    </div>
+
+    <div id="button">
+      <h2 class="h2">button</h2>
+      <div>
+        <ul>
+          <li>input > submit と同じ送信ボタン</li>
+          <li>最近では一般的に利用される</li>
+          <li>デフォルトは、type=submit</li>
+        </ul>
+      </div>
+      <script type="text/plain" class="language-markup">
+        <button>送信</button>
+      </script>
+    </div>
+
+    <div id="textarea">
+      <h2 class="h2">textarea</h2>
+      <textarea name="note" class="form-control">
+備考欄のテキストです。
+改行に対応しています。
+      </textarea>
+
+      <script type="text/plain" class="language-markup">
+      <textarea name="note">テキスト</textarea>
+    </script>
+    </div>
+
+    <div id="select">
+      <h2 class="h2">select</h2>
+      <select name="color">
+        <option value="red">赤</option>
+        <option value="yellow">黄</option>
+        <option value="blue">青</option>
+      </select>
+
+      <script type="text/plain" class="language-markup">
+      <select name="color">
+        <option value="red">赤</option>
+        <option value="yellow">黄</option>
+        <option value="blue">青</option>
+      </select>
+    </script>
+
+      <div>
+        <ul>
+          <li>プルダウン</li>
+          <li>name: 項目名</li>
+          <li>項目: option を利用</li>
+          <li>option > value で値を設定</li>
+        </ul>
+      </div>
+
+      <div id="form">
+        <h2 class="h2">form</h2>
+        <div>
+          <ul>
+            <li>基本的に form タグでコントロールタグを囲む</li>
+            <li>action に送信先URLを指定</li>
+            <li>method に送信方式を指定</li>
+          </ul>
+        </div>
+
+        <script type="text/plain" class="language-markup">
+      <form action="送信先URL" method="post">
+        コントロールタグ
+      </form>
+      </script>
+
+        <div>
+          <h3 class="h3">method *Formタグ対応</h3>
+          <ul>
+            <li>post</li>
+            <li>get</li>
+          </ul>
+
+          <h3 class="h3">method *Formタグ非対応</h3>
+          <ul>
+            <li>update</li>
+            <li>delete</li>
+            <li>put</li>
+          </ul>
+
+          <script type="text/plain" class="language-markup">
+        <form method="post" action="/">
+          <input type="text" name="textArea">
+          <input type="hidden" name="_method" value="DELETE">
+          <input type="submit" value="削除">
+        </form>
+        </script>
+        </div>
+
+        <div>
+          <h2 class="h2">Formサンプル</h2>
+          <div>
+            <form action="../php/post.php" method="post">
+              <div class="card">
+
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="email">ユーザID（Eメールアドレス）</label>
+                    <input type="email" class="form-control" name="email" value="test@test.com" placeholder="Eメールアドレス">
+                    <small class="text-muted"></small>
+                  </div>
+                  <div class="form-group">
+                    <label for="password">パスワード</label>
+                    <input type="password" class="form-control" name="password" value="test" placeholder="パスワード">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="color">カラー</label>
+                    <select name="color">
+                      <option value="red">赤</option>
+                      <option value="yellow">黄</option>
+                      <option value="blue">青</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="is_active">メールマガジン</label>
+                    <input type="radio" name="is_active" value="1" checked="checked">有
+                    <input type="radio" name="is_active" value="0">無
+                  </div>
+
+                  <div class="form-group">
+                    <label for="question">アンケート</label>
+                    <input id="question_1" type="checkbox" name="question[]" value="1"><label for="question_1">質問1</label>
+                    <input id="question_2" type="checkbox" name="question[]" value="2"><label for="question_2">質問2</label>
+                    <input id="question_3" type="checkbox" name="question[]" value="3"><label for="question_3">質問3</label>
+                  </div>
+
+                  <div>
+                    <label for="note">備考</label>
+                    <textarea id="note" name="note" class="form-control">
+備考欄のテキストです。
+改行できます。
+                    </textarea>
+                  </div>
+
+                  <button type="submit" class="btn btn-danger btn-block">送信</button>
+                </div>
+
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+        </form>
+
+        <script type="text/plain" class="language-markup">
+        <form action="送信先URL" method="post">
+          <input type="text" name="email" value="">
+          <input type="password" name="password" value="">
+  
+          <select name="color">
+            <option value="red">赤</option>
+            <option value="yellow">黄</option>
+            <option value="blue">青</option>
+          </select>
+
+          <input type="radio" name="is_active" value="1">有
+          <input type="radio" name="is_active" value="0">無
+  
+          <input type="checkbox" name="question[]" value="1">質問1
+          <input type="checkbox" name="question[]" value="2">質問2
+          <input type="checkbox" name="question[]" value="3">質問3
+  
+          <textarea id="note" name="note" class="form-control">
+          備考欄のテキストです。
+          改行できます。
+          </textarea>
+        </form>
+        </script>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="js/jquery/jquery-3.5.0.min.js"></script>
+  <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/prism.js"></script>
+</body>
+
+</html>
